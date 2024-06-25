@@ -46,7 +46,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8 text-center">
                     <div class="copyright-area">
-                        <p>Copyright 2024 Sword. Designed By Theme IM</p>
+                        <p>Copyright 2024 Marwan Maher</p>
                     </div>
                 </div>
             </div>

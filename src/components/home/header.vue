@@ -5,8 +5,9 @@
                 <div class="container-fluid">
                     <div class="header-menu-content">
                         <nav class="navbar navbar-expand-xl p-0">
-                            <a class="site-logo site-title" href="index.html"><img src="@/assets/assets/images/logo.png"
-                                    alt="site-logo"></a>
+                            <router-link to="/" class="site-logo site-title">
+                                <img src="@/assets/assets/images/logo.png" alt="site-logo">
+                            </router-link>
                             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -40,53 +41,51 @@
                                         </a>
                                         <ul class="sub-menu">
                                             <li class="menu_has_children">
-                                                <a href="#0">HOME</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index.html">HOME ONE</a></li>
-                                                    <li><a href="index-two.html">HOME TWO</a></li>
-                                                </ul>
+                                                <router-link to="/">HOME</router-link>
+
                                             </li>
-                                            <li><a href="about.html">ABOUT US</a></li>
+                                            <li><router-link to="/about">ABOUT US</router-link></li>
                                             <li class="menu_has_children">
                                                 <a href="#0">TRAINING</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="training.html">TRAINING</a></li>
-                                                    <li><a href="training-details.html">TRAINING DETAILS</a></li>
+                                                    <li><router-link to="/training">TRAINING</router-link></li>
+                                                    <li><router-link to="/training-details">TRAINING
+                                                            DETAILS</router-link></li>
                                                 </ul>
                                             </li>
                                             <li class="menu_has_children">
                                                 <a href="#0">PAGES</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="event.html">EVENTS</a></li>
-                                                    <li><a href="event-details.html">EVENT DETAILS</a></li>
-                                                    <li><a href="plan.html">PRICING PLAN</a></li>
-                                                    <li><a href="faq.html">FAQ</a></li>
-                                                    <li><a href="gallery.html">GALLERY</a></li>
-                                                    <li><a href="apply.html">APPLY</a></li>
-                                                    <li><a href="register.html">SIGN UP</a></li>
-                                                    <li><a href="login.html">SIGN IN</a></li>
-                                                    <li><a href="404.html">404 PAGE</a></li>
+                                                    <li><router-link to="/event">EVENTS</router-link></li>
+                                                    <li><router-link to="/event-details">EVENT DETAILS</router-link>
+                                                    </li>
+                                                    <li><router-link to="/plan">PRICING PLAN</router-link></li>
+                                                    <li><router-link to="/faq">FAQ</router-link></li>
+                                                    <li><router-link to="/gallery">GALLERY</router-link></li>
+                                                    <li><router-link to="/apply">APPLY</router-link></li>
+                                                    <li><router-link to="/register">SIGN UP</router-link></li>
+                                                    <li><router-link to="/login">SIGN IN</router-link></li>
+                                                    <li><router-link to="/404">404 PAGE</router-link></li>
                                                 </ul>
                                             </li>
                                             <li class="menu_has_children">
-                                                <a href="#0">MASTERS</a>
+                                                <router-link to="/master">MASTERS</router-link>
                                                 <ul class="sub-menu">
-                                                    <li><a href="master.html">MASTERS</a></li>
-                                                    <li><a href="master-details.html">MASTERS DETAILS</a></li>
+                                                    <li><router-link to="/master-details">MASTERS DETAILS</router-link>
+                                                    </li>
                                                 </ul>
                                             </li>
                                             <li class="menu_has_children">
-                                                <a href="#0">NEWS</a>
+                                                <router-link to="/blog">NEWS</router-link>
                                                 <ul class="sub-menu">
-                                                    <li><a href="blog.html">NEWS</a></li>
-                                                    <li><a href="blog-classic.html">NEWS CLASSIC</a></li>
-                                                    <li><a href="blog-details.html">NEWS DETAILS</a></li>
+                                                    <li><router-link to="/blog-classic">NEWS CLASSIC</router-link></li>
+                                                    <li><router-link to="/blog-details">NEWS DETAILS</router-link></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">CONTACT US</a></li>
+                                            <li><router-link to="/contact">CONTACT US</router-link></li>
                                         </ul>
                                     </li>
-                                    <li><a href="training.html">TRAINING</a></li>
+                                    <li><router-link to="/training">TRAINING</router-link></li>
                                 </ul>
                                 <div class="header-right">
                                     <div class="header-links-area">
@@ -104,8 +103,8 @@
                                     </div>
                                     <div class="header-action-area">
                                         <div class="header-action">
-                                            <a href="contact.html" class="btn--base">GET IN TOUCH <i
-                                                    class="fas fa-arrow-right ml-2"></i></a>
+                                            <router-link to="/contact" class="btn--base">GET IN TOUCH <i
+                                                    class="fas fa-arrow-right ml-2"></i></router-link>
                                         </div>
                                     </div>
                                 </div>
@@ -117,3 +116,11 @@
         </div>
     </header>
 </template>
+
+<script setup>
+// Import any components or define setup as needed
+</script>
+
+<style>
+/* Define styles as needed */
+</style>
