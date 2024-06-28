@@ -1,7 +1,7 @@
 <template>
     <section class="feature-section feature-gray bg--gray ptb-120">
         <div class="feature-element" data-aos="fade-right" data-aos-duration="1200">
-            <img src="@/assets/assets/images/element/element-3.png" alt="element">
+            <img src="/src/assets/images/element/element-3.png" alt="element">
         </div>
         <div class="container">
             <div class="row justify-content-center">
@@ -18,7 +18,7 @@
                     <div class="feature-item" data-aos="zoom-in" data-aos-duration="1200">
                         <div class="feature-icon-area">
                             <div class="feature-icon">
-                                <img src="@/assets/assets/images/icon/icon-6.png" alt="icon">
+                                <img src="/src/assets/images/icon/icon-6.png" alt="icon">
                             </div>
                             <div class="feature-number">
                                 <span>01</span>
@@ -34,7 +34,7 @@
                     <div class="feature-item" data-aos="zoom-in" data-aos-duration="1200">
                         <div class="feature-icon-area">
                             <div class="feature-icon">
-                                <img src="@/assets/assets/images/icon/icon-7.png" alt="icon">
+                                <img src="/src/assets/images/icon/icon-7.png" alt="icon">
                             </div>
                             <div class="feature-number">
                                 <span>02</span>
@@ -50,7 +50,7 @@
                     <div class="feature-item" data-aos="zoom-in" data-aos-duration="1200">
                         <div class="feature-icon-area">
                             <div class="feature-icon">
-                                <img src="@/assets/assets/images/icon/icon-62.png" alt="icon">
+                                <img src="/src/assets/images/icon/icon-62.png" alt="icon">
                             </div>
                             <div class="feature-number">
                                 <span>03</span>
@@ -66,7 +66,7 @@
                     <div class="feature-item" data-aos="zoom-in" data-aos-duration="1200">
                         <div class="feature-icon-area">
                             <div class="feature-icon">
-                                <img src="@/assets/assets/images/icon/icon-63.png" alt="icon">
+                                <img src="/src/assets/images/icon/icon-63.png" alt="icon">
                             </div>
                             <div class="feature-number">
                                 <span>04</span>

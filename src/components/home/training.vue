@@ -3,11 +3,11 @@
     <section class="training-section ptb-120">
         <div class="training-element-one my-paroller" data-paroller-factor="0.08" data-paroller-type="foreground"
             data-paroller-direction="horizontal">
-            <img src="@/assets/assets/images/element/element-1.png" alt="element">
+            <img src="/src/assets/images/element/element-1.png" alt="element">
         </div>
         <div class="training-element-two my-paroller" data-paroller-factor="0.08" data-paroller-type="foreground"
             data-paroller-direction="horizontal">
-            <img src="@/assets/assets/images/element/element-2.png" alt="element">
+            <img src="/src/assets/images/element/element-2.png" alt="element">
         </div>
         <div class="container">
             <div class="row">
@@ -37,7 +37,7 @@
                                 <div class="swiper-slide">
                                     <div class="training-item text-center">
                                         <div class="training-icon">
-                                            <img src="@/assets/assets/images/icon/icon-3.png" alt="icon">
+                                            <img src="/src/assets/images/icon/icon-3.png" alt="icon">
                                         </div>
                                         <div class="training-content">
                                             <h3 class="title"><a href="">ENGLISH BOXING</a>
@@ -46,7 +46,7 @@
                                                 goods from one location.</p>
                                         </div>
                                         <div class="training-overlay bg-overlay-base bg_img"
-                                            data-background="@/assets/assets/images/training/training-1.png">
+                                            data-background="/src/assets/images/training/training-1.png">
                                             <div class="training-overlay-content">
                                                 <h3 class="title"><a href="">ENGLISH BOXING
                                                         TRAINING</a></h3>
@@ -61,7 +61,7 @@
                                 <div class="swiper-slide">
                                     <div class="training-item text-center">
                                         <div class="training-icon">
-                                            <img src="@/assets/assets/images/icon/icon-4.png" alt="icon">
+                                            <img src="/src/assets/images/icon/icon-4.png" alt="icon">
                                         </div>
                                         <div class="training-content">
                                             <h3 class="title"><a href="">PERSONAL BOXING</a>
@@ -70,7 +70,7 @@
                                                 goods from one location.</p>
                                         </div>
                                         <div class="training-overlay bg-overlay-base bg_img"
-                                            data-background="@/assets/assets/images/training/training-1.png">
+                                            data-background="/src/assets/images/training/training-1.png">
                                             <div class="training-overlay-content">
                                                 <h3 class="title"><a href="">PERSONAL BOXING
                                                         TRAINING</a></h3>
@@ -85,7 +85,7 @@
                                 <div class="swiper-slide">
                                     <div class="training-item text-center">
                                         <div class="training-icon">
-                                            <img src="@/assets/assets/images/icon/icon-5.png" alt="icon">
+                                            <img src="/src/assets/images/icon/icon-5.png" alt="icon">
                                         </div>
                                         <div class="training-content">
                                             <h3 class="title"><a href="">KICK BOXING</a></h3>
@@ -93,7 +93,7 @@
                                                 goods from one location.</p>
                                         </div>
                                         <div class="training-overlay bg-overlay-base bg_img"
-                                            data-background="@/assets/assets/images/training/training-1.png">
+                                            data-background="/src/assets/images/training/training-1.png">
                                             <div class="training-overlay-content">
                                                 <h3 class="title"><a href="">KICK BOXING
                                                         TRAINING</a></h3>

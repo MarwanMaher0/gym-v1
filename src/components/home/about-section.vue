@@ -1,5 +1,5 @@
 <template>
-    <section class="about-section pt-120 bg-overlay-black bg_img" data-background="@/assets/assets/images/bg/bg-1.png">
+    <section class="about-section pt-120 bg-overlay-black bg_img" data-background="/src/assets/images/bg/bg-1.png">
         <div class="section-logo-text">
             <span class="title">SWORD</span>
         </div>
@@ -7,10 +7,10 @@
             <div class="row justify-content-center mb-30-none">
                 <div class="col-xl-6 col-lg-12 mb-30">
                     <div class="about-thumb">
-                        <img src="@/assets/assets/images/about.png" alt="about">
+                        <img src="/src/assets/images/about.png" alt="about">
                         <div class="about-thumb-content">
                             <div class="signature-thumb">
-                                <img src="@/assets/assets/images/signature.png" alt="signature">
+                                <img src="/src/assets/images/signature.png" alt="signature">
                             </div>
                             <div class="signature-content">
                                 <span class="title">DIRECTOR / INSTRUCTOR</span>
@@ -43,7 +43,7 @@
                         <div class="about-item-area">
                             <div class="about-item mb-30">
                                 <div class="about-icon">
-                                    <img src="@/assets/assets/images/icon/icon-1.png" alt="icon">
+                                    <img src="/src/assets/images/icon/icon-1.png" alt="icon">
                                 </div>
                                 <div class="about-content">
                                     <h3 class="title">FREE FITNESS TRAINING</h3>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="about-item mb-30">
                                 <div class="about-icon">
-                                    <img src="@/assets/assets/images/icon/icon-2.png" alt="icon">
+                                    <img src="/src/assets/images/icon/icon-2.png" alt="icon">
                                 </div>
                                 <div class="about-content">
                                     <h3 class="title">CARDIO AND STRENGTH</h3>

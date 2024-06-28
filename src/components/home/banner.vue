@@ -1,23 +1,23 @@
 <template>
-    <section class="banner-section bg_img" data-background="@/assets/assets/images/bg/bg-5.png">
+    <section class="banner-section bg_img" data-background="/src/assets/images/bg/bg-5.png">
         <div class="banner-element">
-            <img src="@/assets/assets/images/element/element-7.png" alt="element">
+            <img src="/src/assets/images/element/element-7.png" alt="element">
         </div>
         <div class="banner-element-two">
-            <img src="@/assets/assets/images/element/element-26.png" alt="element">
+            <img src="/src/assets/images/element/element-26.png" alt="element">
         </div>
         <div class="banner-thumb-area">
             <div class="banner-thumb-element-one">
-                <img src="@/assets/assets/images/element/element-11.png" alt="element">
+                <img src="/src/assets/images/element/element-11.png" alt="element">
             </div>
             <div class="banner-thumb-element-two">
-                <img src="@/assets/assets/images/element/element-12.png" alt="element">
+                <img src="/src/assets/images/element/element-12.png" alt="element">
             </div>
             <div class="banner-thumb-element-three">
-                <img src="@/assets/assets/images/element/element-13.png" alt="element">
+                <img src="/src/assets/images/element/element-13.png" alt="element">
             </div>
             <div class="banner-thumb" data-aos="fade-up" data-aos-duration="2500">
-                <img src="@/assets/assets/images/element/element-8.png" alt="element">
+                <img src="/src/assets/images/element/element-8.png" alt="element">
             </div>
         </div>
         <div class="container-fluid">
@@ -32,13 +32,13 @@
                             placerat commodo luctus. Etiam pulvinar dapibus risus, sit amet consectetur metus
                             lobortis vitae.</p>
                         <div class="banner-arrow">
-                            <img src="@/assets/assets/images/element/element-10.png" alt="element">
+                            <img src="/src/assets/images/element/element-10.png" alt="element">
                         </div>
                         <div class="banner-widget">
                             <div class="banner-widget-wrapper">
                                 <div class="banner-widget-left">
                                     <div class="banner-widget-thumb">
-                                        <img src="@/assets/assets/images/element/element-9.png" alt="element">
+                                        <img src="/src/assets/images/element/element-9.png" alt="element">
                                     </div>
                                 </div>
                                 <div class="banner-widget-middle">

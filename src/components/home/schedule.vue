@@ -14,7 +14,7 @@
                 <div class="col-xl-12">
                     <div class="schedule-area table-responsive">
                         <table class="custom-table bg-overlay-black bg_img"
-                            data-background="@/assets/assets/images/bg/bg-11.png">
+                            data-background="/src/assets/images/bg/bg-11.png">
                             <thead>
                                 <tr>
                                     <th>Routine</th>

@@ -1,6 +1,6 @@
 <template>
     <section class="banner-section banner-section-two-asd inner-banner-section bg-overlay-red bg_img"
-        data-background="/src/assets/assets/images/bg/bg-10.png">
+        data-background="/src/assetsimages/bg/bg-10.png">
         <div class="section-logo-text">
             <span class="title">SWORD</span>
         </div>
@@ -19,7 +19,7 @@
 <style>
 .banner-section.banner-section-two-asd {
     position: relative;
-    background-image: url('/src/assets/assets/images/bg/bg-12.png');
+    background-image: url('/src/assetsimages/bg/bg-12.png');
     background-size: cover;
     background-position: center center;
     /* Add any other necessary styles */

@@ -15,11 +15,11 @@
         <section class="account-section ptb-120">
             <div class="account-element-one my-paroller" data-paroller-factor="0.2" data-paroller-type="foreground"
                 data-paroller-direction="vertical">
-                <img src="/src/assets/assets/images/element/element-1.png" alt="element">
+                <img src="/src/assetsimages/element/element-1.png" alt="element">
             </div>
             <div class="account-element-two my-paroller" data-paroller-factor="0.2" data-paroller-type="foreground"
                 data-paroller-direction="vertical">
-                <img src="/src/assets/assets/images/element/element-2.png" alt="element">
+                <img src="/src/assetsimages/element/element-2.png" alt="element">
             </div>
             <div class="container">
                 <div class="row justify-content-center mb-10-none">

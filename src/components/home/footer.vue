@@ -1,18 +1,17 @@
 <template>
     <footer class="footer-section pt-120">
         <div class="footer-bg">
-            <img src="@/assets/assets/images/bg/bg-4.png" alt="bg">
+            <img src="/src/assets/images/bg/bg-4.png" alt="bg">
         </div>
         <div class="footer-element">
-            <img src="@/assets/assets/images/element/element-6.png" alt="element">
+            <img src="/src/assets/images/element/element-6.png" alt="element">
         </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12">
                     <div class="footer-top">
                         <div class="footer-logo">
-                            <a href="" class="site-logo"><img src="@/assets/assets/images/logo-white.png"
-                                    alt="logo"></a>
+                            <a href="" class="site-logo"><img src="/src/assets/images/logo-white.png" alt="logo"></a>
                         </div>
                         <ul class="footer-social">
                             <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
