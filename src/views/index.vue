@@ -4,10 +4,10 @@
         <Banner />
         <Feature />
         <Training />
-        <About />
+        <About id="ABOUT" />
         <callToAction />
-        <schedule />
-        <Footer />
+        <schedule id="TRAINING" />
+        <Footer id="foter" />
         <ScrollToTop />
 
     </div>

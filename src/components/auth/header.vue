@@ -20,11 +20,8 @@
                                     </li>
                                     <li><router-link to="/about">ABOUT US</router-link></li>
                                     <li class="menu_has_children">
-                                        <a href="#0">TRAINING</a>
-                                        <ul class="sub-menu">
-                                            <li><router-link to="/training">TRAINING</router-link></li>
-                                            <li><router-link to="/training-details">TRAINING DETAILS</router-link></li>
-                                        </ul>
+                                        <router-link to="/shop">SHOP</router-link>
+
                                     </li>
                                     <!-- Other menu items using router-link -->
                                 </ul>

@@ -11,7 +11,7 @@
                 <div class="col-xl-12">
                     <div class="footer-top">
                         <div class="footer-logo">
-                            <a href="index.html" class="site-logo"><img src="@/assets/assets/images/logo-white.png"
+                            <a href="" class="site-logo"><img src="@/assets/assets/images/logo-white.png"
                                     alt="logo"></a>
                         </div>
                         <ul class="footer-social">
@@ -32,13 +32,13 @@
                             <button type="submit" class="btn--base">GET ALART</button>
                         </form>
                         <ul class="footer-list">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="about.html">ABOUT US</a></li>
-                            <li><a href="training.html">TRAINING</a></li>
-                            <li><a href="master.html">MASTER</a></li>
-                            <li><a href="blog.html">NEWS</a></li>
-                            <li><a href="event.html">EVENT</a></li>
-                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="">TRAINING</a></li>
+                            <li><a href="">MASTER</a></li>
+                            <li><a href="">NEWS</a></li>
+                            <li><a href="">EVENT</a></li>
+                            <li><a href="">CONTACT US</a></li>
                         </ul>
                     </div>
                 </div>

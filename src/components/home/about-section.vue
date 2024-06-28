@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <div class="about-btn">
-                            <a href="about.html" class="btn--base">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                            <a href="" class="btn--base">Read More <i class="fas fa-arrow-right ml-2"></i></a>
                         </div>
                     </div>
                 </div>

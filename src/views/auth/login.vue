@@ -74,8 +74,8 @@ let form = {
 };
 
 const login = () => {
-    axios.post('/api/user/login/', {
-        username: form.username,
+    axios.post('/api/user/token/', {
+        email: form.username,
         password: form.password
     })
         .then(response => {
@@ -91,6 +91,4 @@ const login = () => {
 }
 </script>
 
-<style scoped>
-/* Add any scoped styles here */
-</style>
+<style scoped></style>

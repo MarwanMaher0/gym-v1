@@ -21,8 +21,8 @@ const router = createRouter({
     },
     // ecom
     {
-      path: "/ecom",
-      name: "Ecom",
+      path: "/shop",
+      name: "shop",
       component: () => import("../views/ecom/index.vue"),
     },
     {

@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="banner-widget-right">
                                     <div class="banner-widget-btn">
-                                        <a href="apply.html" class="btn--base">Apply Now <i
+                                        <a href="" class="btn--base">Apply Now <i
                                                 class="fas fa-arrow-right ml-2"></i></a>
                                     </div>
                                 </div>

@@ -40,7 +40,7 @@
                                             <img src="@/assets/assets/images/icon/icon-3.png" alt="icon">
                                         </div>
                                         <div class="training-content">
-                                            <h3 class="title"><a href="training-details.html">ENGLISH BOXING</a>
+                                            <h3 class="title"><a href="">ENGLISH BOXING</a>
                                             </h3>
                                             <p>Transport or transportation is the movement of humans, animals and
                                                 goods from one location.</p>
@@ -48,10 +48,10 @@
                                         <div class="training-overlay bg-overlay-base bg_img"
                                             data-background="@/assets/assets/images/training/training-1.png">
                                             <div class="training-overlay-content">
-                                                <h3 class="title"><a href="training-details.html">ENGLISH BOXING
+                                                <h3 class="title"><a href="">ENGLISH BOXING
                                                         TRAINING</a></h3>
                                                 <div class="training-btn">
-                                                    <a href="training-details.html" class="btn--base active">Training
+                                                    <a href="" class="btn--base active">Training
                                                         Details <i class="fas fa-arrow-right ml-2"></i></a>
                                                 </div>
                                             </div>
@@ -64,7 +64,7 @@
                                             <img src="@/assets/assets/images/icon/icon-4.png" alt="icon">
                                         </div>
                                         <div class="training-content">
-                                            <h3 class="title"><a href="training-details.html">PERSONAL BOXING</a>
+                                            <h3 class="title"><a href="">PERSONAL BOXING</a>
                                             </h3>
                                             <p>Transport or transportation is the movement of humans, animals and
                                                 goods from one location.</p>
@@ -72,10 +72,10 @@
                                         <div class="training-overlay bg-overlay-base bg_img"
                                             data-background="@/assets/assets/images/training/training-1.png">
                                             <div class="training-overlay-content">
-                                                <h3 class="title"><a href="training-details.html">PERSONAL BOXING
+                                                <h3 class="title"><a href="">PERSONAL BOXING
                                                         TRAINING</a></h3>
                                                 <div class="training-btn">
-                                                    <a href="training-details.html" class="btn--base active">Training
+                                                    <a href="" class="btn--base active">Training
                                                         Details <i class="fas fa-arrow-right ml-2"></i></a>
                                                 </div>
                                             </div>
@@ -88,17 +88,17 @@
                                             <img src="@/assets/assets/images/icon/icon-5.png" alt="icon">
                                         </div>
                                         <div class="training-content">
-                                            <h3 class="title"><a href="training-details.html">KICK BOXING</a></h3>
+                                            <h3 class="title"><a href="">KICK BOXING</a></h3>
                                             <p>Transport or transportation is the movement of humans, animals and
                                                 goods from one location.</p>
                                         </div>
                                         <div class="training-overlay bg-overlay-base bg_img"
                                             data-background="@/assets/assets/images/training/training-1.png">
                                             <div class="training-overlay-content">
-                                                <h3 class="title"><a href="training-details.html">KICK BOXING
+                                                <h3 class="title"><a href="">KICK BOXING
                                                         TRAINING</a></h3>
                                                 <div class="training-btn">
-                                                    <a href="training-details.html" class="btn--base active">Training
+                                                    <a href="" class="btn--base active">Training
                                                         Details <i class="fas fa-arrow-right ml-2"></i></a>
                                                 </div>
                                             </div>

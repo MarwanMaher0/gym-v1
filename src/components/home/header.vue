@@ -16,7 +16,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav main-menu mr-auto">
                                     <li class="menu_has_children">
-                                        <a href="#0">
+                                        <a href="">
                                             <div class="toggle-menu">
                                                 <div class="toggle-wrapper">
                                                     <div class="toggle-bar">
@@ -44,48 +44,18 @@
                                                 <router-link to="/">HOME</router-link>
 
                                             </li>
-                                            <li><router-link to="/about">ABOUT US</router-link></li>
+                                            <li><a href="#ABOUT">ABOUT US</a></li>
                                             <li class="menu_has_children">
-                                                <a href="#0">TRAINING</a>
-                                                <ul class="sub-menu">
-                                                    <li><router-link to="/training">TRAINING</router-link></li>
-                                                    <li><router-link to="/training-details">TRAINING
-                                                            DETAILS</router-link></li>
-                                                </ul>
+                                                <a href="#TRAINING">TRAINING</a>
+
                                             </li>
-                                            <li class="menu_has_children">
-                                                <a href="#0">PAGES</a>
-                                                <ul class="sub-menu">
-                                                    <li><router-link to="/event">EVENTS</router-link></li>
-                                                    <li><router-link to="/event-details">EVENT DETAILS</router-link>
-                                                    </li>
-                                                    <li><router-link to="/plan">PRICING PLAN</router-link></li>
-                                                    <li><router-link to="/faq">FAQ</router-link></li>
-                                                    <li><router-link to="/gallery">GALLERY</router-link></li>
-                                                    <li><router-link to="/apply">APPLY</router-link></li>
-                                                    <li><router-link to="/register">SIGN UP</router-link></li>
-                                                    <li><router-link to="/login">SIGN IN</router-link></li>
-                                                    <li><router-link to="/404">404 PAGE</router-link></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu_has_children">
-                                                <router-link to="/master">MASTERS</router-link>
-                                                <ul class="sub-menu">
-                                                    <li><router-link to="/master-details">MASTERS DETAILS</router-link>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu_has_children">
-                                                <router-link to="/blog">NEWS</router-link>
-                                                <ul class="sub-menu">
-                                                    <li><router-link to="/blog-classic">NEWS CLASSIC</router-link></li>
-                                                    <li><router-link to="/blog-details">NEWS DETAILS</router-link></li>
-                                                </ul>
-                                            </li>
-                                            <li><router-link to="/contact">CONTACT US</router-link></li>
+                                            <li><router-link to="/register">SIGN UP</router-link></li>
+                                            <li><router-link to="/login">SIGN IN</router-link></li>
+
+                                            <li><a href="#foter">CONTACT US</a></li>
                                         </ul>
                                     </li>
-                                    <li><router-link to="/training">TRAINING</router-link></li>
+                                    <li><router-link to="/shop">SHOP</router-link></li>
                                 </ul>
                                 <div class="header-right">
                                     <div class="header-links-area">
