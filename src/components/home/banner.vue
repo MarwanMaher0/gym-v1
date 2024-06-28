@@ -17,7 +17,7 @@
                 <img src="/src/assets/images/element/element-13.png" alt="element">
             </div>
             <div class="banner-thumb" data-aos="fade-up" data-aos-duration="2500">
-                <img src="/src/assets/images/element/element-8.png" alt="element">
+                <img loading="lazy" src="/src/assets/images/element/element-8.png" alt="element">
             </div>
         </div>
         <div class="container-fluid">
