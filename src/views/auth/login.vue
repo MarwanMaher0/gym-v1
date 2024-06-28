@@ -81,7 +81,7 @@ const login = () => {
         .then(response => {
             console.log('Successful login:', response.data);
             // Redirect to dashboard or another page upon successful login
-            router.push('/dashboard');
+            router.push('/');
         })
         .catch(error => {
             console.error('Error logging in:', error);
