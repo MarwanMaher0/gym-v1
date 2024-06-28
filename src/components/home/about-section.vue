@@ -1,7 +1,7 @@
 <template>
     <section class="about-section pt-120 bg-overlay-black bg_img" data-background="/src/assets/images/bg/bg-1.png">
         <div class="section-logo-text">
-            <span class="title">GymMaster</span>
+            <span class="title">SWORD</span>
         </div>
         <div class="container">
             <div class="row justify-content-center mb-30-none">

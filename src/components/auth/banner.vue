@@ -2,7 +2,7 @@
     <section class="banner-section banner-section-two-asd inner-banner-section bg-overlay-red bg_img"
         data-background="/src/assets/images/bg/bg-10.png">
         <div class="section-logo-text">
-            <span class="title">GymMaster</span>
+            <span class="title">SWORD</span>
         </div>
         <div class="container-fluid">
             <div class="row justify-content-center align-items-end mb-30-none">
