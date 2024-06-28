@@ -3,9 +3,8 @@
         <Header />
         <Banner />
         <Feature />
-        <Training />
+        <!-- <Training /> -->
         <About id="ABOUT" />
-        <callToAction />
         <schedule id="TRAINING" />
         <Footer id="foter" />
         <ScrollToTop />
