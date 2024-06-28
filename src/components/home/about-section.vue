@@ -36,7 +36,7 @@
                 <div class="col-xl-6 col-lg-12 mb-30">
                     <div class="about-content-area">
                         <div class="section-header white">
-                            <h2 class="section-title">ABOUT <span>BOXING</span> SCHOOL</h2>
+                            <h2 class="section-title">ABOUT <span>MMA</span> SCHOOL</h2>
                             <p>Fight School has specialized in martial arts since 1986 and has one of the most
                                 innovative programs in the nation.</p>
                         </div>

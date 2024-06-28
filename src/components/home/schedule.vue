@@ -31,7 +31,7 @@
                                     <td>Cycling <span>10 am - 11 am</span></td>
                                     <td>Yoga <span>10 am - 11 am</span></td>
                                     <td class="blank-data"></td>
-                                    <td>Boxing <span>10 am - 11 am</span></td>
+                                    <td>MMA <span>10 am - 11 am</span></td>
                                     <td>Karate <span>10 am - 11 am</span></td>
                                 </tr>
                                 <tr>

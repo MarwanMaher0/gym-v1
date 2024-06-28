@@ -7,7 +7,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8 text-center">
                     <div class="section-header" data-aos="fade-up" data-aos-duration="1200">
-                        <h2 class="section-title">OUR <span>BOXING</span> FEATURES</h2>
+                        <h2 class="section-title">OUR <span>MMA</span> FEATURES</h2>
                         <p>Fight School has specialized in martial arts since 1986 and has one of the most
                             innovative programs in the nation.</p>
                     </div>
