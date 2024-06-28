@@ -7,12 +7,7 @@
             <img src="/src/assets/images/element/element-26.png" alt="element">
         </div>
         <div class="banner-thumb-area">
-            <div class="banner-thumb-element-one">
-                <img src="/src/assets/images/element/element-11.png" alt="element">
-            </div>
-            <div class="banner-thumb-element-two">
-                <img src="/src/assets/images/element/element-12.png" alt="element">
-            </div>
+
             <div class="banner-thumb-element-three">
                 <img src="/src/assets/images/element/element-13.png" alt="element">
             </div>
