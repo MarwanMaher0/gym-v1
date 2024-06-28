@@ -16,7 +16,7 @@
             <div class="banner-thumb-element-three">
                 <img src="/src/assets/images/element/element-13.png" alt="element">
             </div>
-            <div class="banner-thumb" data-aos="fade-up" data-aos-duration="2500">
+            <div class="banner-thumb">
                 <img loading="lazy" src="/src/assets/images/element/element-8.png" alt="element">
             </div>
         </div>
