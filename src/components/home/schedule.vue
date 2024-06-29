@@ -17,74 +17,70 @@
                             <thead>
                                 <tr>
                                     <th>Routine</th>
-                                    <th>10 am</th>
-                                    <th>12 am</th>
-                                    <th>02 am</th>
-                                    <th>05 am</th>
-                                    <th>07 am</th>
+                                    <th>12 pm</th>
+                                    <th>5 pm</th>
+                                    <th>10 pm</th>
+                                    <th>08 am</th>
+                                    <th>12 pm</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Satarday</td>
-                                    <td>Men <span>10 am - 11 am</span></td>
-                                    <td>Ladies <span>10 am - 11 am</span></td>
+                                    <td>Ladies <span>.</span></td>
+                                    <td>Men <span>.</span></td>
                                     <td class="blank-data"></td>
-                                    <td>MMA <span>10 am - 11 am</span></td>
-                                    <td>MMA <span>10 am - 11 am</span></td>
+                                    <td>MMA <span>(Men Only)</span></td>
+                                    <td>MMA <span>(Men Only)</span></td>
                                 </tr>
                                 <tr>
                                     <td>Sunday</td>
-                                    <td class="blank-data">
-                                        <div class="dot"></div>
-                                    </td>
-                                    <td>Men <span>10 am - 11 am</span></td>
-                                    <td>MMA <span>10 am - 11 am</span></td>
+                                    <td>Yoga <span>(Ladies)</span></td>
+                                    <td>Men <span>.</span></td>
+                                    <td>MMA <span>(Men Only)</span></td>
                                     <td class="blank-data"></td>
                                     <td>
-                                        <div class="dot">MMA <span>10 am - 11 am</span></div>
+                                        <div class="dot">MMA <span>(Men Only)</span></div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Monday</td>
-                                    <td>Ladies <span>10 am - 11 am</span></td>
+                                    <td>Men <span>.</span></td>
                                     <td class="blank-data"></td>
-                                    <td>Men <span>10 am - 11 am</span></td>
-                                    <td>Men <span>10 am - 11 am</span></td>
+                                    <td>Men <span>.</span></td>
+                                    <td>Men <span>.</span></td>
                                     <td class="blank-data"></td>
                                 </tr>
                                 <tr>
                                     <td>Tuesday</td>
                                     <td class="blank-data"></td>
-                                    <td class="active">Men <span>10 am - 11 am</span></td>
+                                    <td class="active">Men <span>.</span></td>
                                     <td class="blank-data"></td>
-                                    <td>Ladies <span>10 am - 11 am</span></td>
+                                    <td>Ladies <span>.</span></td>
                                     <td class="blank-data"></td>
                                 </tr>
                                 <tr>
                                     <td>Wednesday</td>
-                                    <td>Men <span>10 am - 11 am</span></td>
-                                    <td>Men <span>10 am - 11 am</span></td>
-                                    <td>Ladies <span>10 am - 11 am</span></td>
+                                    <td>Yoga <span>Men</span></td>
+                                    <td>Men <span>.</span></td>
+                                    <td>MMA <span>(Men Only)</span></td>
                                     <td class="blank-data"></td>
-                                    <td>Yoga <span>10 am - 11 am</span></td>
+                                    <td>Ladies <span>.</span></td>
                                 </tr>
                                 <tr>
                                     <td>Thursday</td>
-                                    <td>Men <span>10 am - 11 am</span></td>
+                                    <td>Men <span>.</span></td>
                                     <td class="blank-data"></td>
-                                    <td>Men <span>10 am - 11 am</span></td>
+                                    <td>Men <span>.</span></td>
                                     <td class="blank-data"></td>
-                                    <td>Men <span>10 am - 11 am</span></td>
+                                    <td>Men <span>.</span></td>
                                 </tr>
                                 <tr>
                                     <td>Friday</td>
-                                    <td class="blank-data">
-                                        <div class="dot"></div>
-                                    </td>
-                                    <td>Men <span>10 am - 11 am</span></td>
+                                    <td>Ladies <span>.</span></td>
+                                    <td>Men <span>.</span></td>
                                     <td class="blank-data"></td>
-                                    <td>Men <span>10 am - 11 am</span></td>
+                                    <td>Men <span>.</span></td>
                                     <td class="blank-data">
                                         <div class="dot"></div>
                                     </td>

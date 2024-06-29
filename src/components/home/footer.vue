@@ -11,7 +11,7 @@
                 <div class="col-xl-12">
                     <div class="footer-top">
                         <div class="footer-logo">
-                            <a href="" class="site-logo"><img src="/src/assets/images/logo-white.png" alt="logo"></a>
+                            <a href="" class="site-logo"><img src="/src/assets/images/may.png" alt="logo"></a>
                         </div>
                         <ul class="footer-social">
                             <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
@@ -45,7 +45,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8 text-center">
                     <div class="copyright-area">
-                        <p>Copyright 2024 Marwan Maher</p>
+                        <p>Copyright 2024 O&O</p>
                     </div>
                 </div>
             </div>

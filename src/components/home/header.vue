@@ -6,7 +6,7 @@
                     <div class="header-menu-content">
                         <nav class="navbar navbar-expand-xl p-0">
                             <router-link to="/" class="site-logo site-title">
-                                <img src="/src/assets/images/logo.png" alt="site-logo">
+                                <img src="/src/assets/images/may.png" alt="site-logo">
                             </router-link>
                             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
