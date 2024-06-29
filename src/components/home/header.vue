@@ -62,12 +62,11 @@
                                         <ul class="header-links">
                                             <li>
                                                 <h5 class="title">Call Us Free</h5>
-                                                <span class="sub-title"><a href="tel:+65325936523">+65 3259
-                                                        36523</a></span>
+                                                <span class="sub-title"><a href="tel:+65325936523">+20 2341348</a></span>
                                             </li>
                                             <li>
                                                 <h5 class="title">Address</h5>
-                                                <span class="sub-title">123, New Lenox Chicago, IL 60606</span>
+                                                <span class="sub-title">55RH+3CP, Mahmood Rashwn,Assiut</span>
                                             </li>
                                         </ul>
                                     </div>

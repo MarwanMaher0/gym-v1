@@ -7,9 +7,8 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8 text-center">
                     <div class="section-header" data-aos="fade-up" data-aos-duration="1200">
-                        <h2 class="section-title">OUR <span>MMA</span> FEATURES</h2>
-                        <p>Fight School has specialized in martial arts since 1986 and has one of the most
-                            innovative programs in the nation.</p>
+                        <h2 class="section-title">OUR <span>Gym</span> FEATURES</h2>
+                        
                     </div>
                 </div>
             </div>
@@ -26,7 +25,7 @@
                         </div>
                         <div class="feature-content">
                             <h4 class="title">FREE CONSULTATION</h4>
-                            <p>Fight School has specialized in martial arts since 1986 and has one of the most</p>
+                            <p>A free gym consultation assesses your fitness, discusses goals, provides a workout plan, and includes a facility tour and Q&A.</p>
                         </div>
                     </div>
                 </div>
@@ -42,7 +41,7 @@
                         </div>
                         <div class="feature-content">
                             <h4 class="title">EXCELLENT SERVICE</h4>
-                            <p>Fight School has specialized in martial arts since 1986 and has one of the most</p>
+                            <p>Our gym offers personalized training, top-notch equipment, diverse classes, and expert staff to meet your fitness goals.</p>
                         </div>
                     </div>
                 </div>
@@ -58,7 +57,7 @@
                         </div>
                         <div class="feature-content">
                             <h4 class="title">BEST TRAINERS</h4>
-                            <p>Fight School has specialized in martial arts since 1986 and has one of the most</p>
+                            <p>"Our gym is known for having some of the best trainers in our community."</p>
                         </div>
                     </div>
                 </div>
@@ -74,7 +73,7 @@
                         </div>
                         <div class="feature-content">
                             <h4 class="title">WORK PROGRAMS</h4>
-                            <p>Fight School has specialized in martial arts since 1986 and has one of the most</p>
+                            <p>The gym offers a selection of specialised workout programmes that are specifically developed to fulfil the fitness goals of different individuals.</p>
                         </div>
                     </div>
                 </div>

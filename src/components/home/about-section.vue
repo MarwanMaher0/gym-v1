@@ -36,9 +36,8 @@
                 <div class="col-xl-6 col-lg-12 mb-30">
                     <div class="about-content-area">
                         <div class="section-header white">
-                            <h2 class="section-title">ABOUT <span>MMA</span> SCHOOL</h2>
-                            <p>Fight School has specialized in martial arts since 1986 and has one of the most
-                                innovative programs in the nation.</p>
+                            <h2 class="section-title">ABOUT <span>Gym Master</span>Cross-Training</h2>
+                            <p>At Gym Master, we offer top-notch fitness guidance and cutting-edge facilities to elevate your health journey.</p>
                         </div>
                         <div class="about-item-area">
                             <div class="about-item mb-30">
@@ -47,8 +46,7 @@
                                 </div>
                                 <div class="about-content">
                                     <h3 class="title">FREE FITNESS TRAINING</h3>
-                                    <p>We teach martial arts because we love it — not because we want to make money
-                                        on you. Unlike other martial arts schools.</p>
+                                    <p>Enjoy free, personalized fitness training sessions tailored to your goals at our gym.</p>
                                 </div>
                             </div>
                             <div class="about-item mb-30">
@@ -57,8 +55,7 @@
                                 </div>
                                 <div class="about-content">
                                     <h3 class="title">CARDIO AND STRENGTH</h3>
-                                    <p>We teach martial arts because we love it — not because we want to make money
-                                        on you. Unlike other martial arts schools.</p>
+                                    <p>Explore our gym's comprehensive cardio and strength training programs for optimal fitness results.</p>
                                 </div>
                             </div>
                         </div>

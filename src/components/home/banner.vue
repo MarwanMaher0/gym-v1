@@ -19,13 +19,10 @@
             <div class="row align-items-end mb-30-none">
                 <div class="col-xl-6 col-lg-12 mb-30">
                     <div class="banner-content" data-aos="fade-right" data-aos-duration="1800">
-                        <span class="sub-title">WELCOME TO SWORD</span>
+                        <span class="sub-title">WELCOME TO GYM MASTER</span>
                         <h1 class="title">EVERY GREAT</h1>
                         <h3 class="inner-title">JOURNEY STARTS WITH ONE STEP!</h3>
-                        <p>Morbi eleifend tortor vitae sapien laoreet feugiat. Aliquam dictum vulputate sapien eu
-                            laoreet. Aliquam purus est, molestie et sagittis sit amet, sagittis in magna. Morbi
-                            placerat commodo luctus. Etiam pulvinar dapibus risus, sit amet consectetur metus
-                            lobortis vitae.</p>
+                        <p>Going to the gym represents a dedication to becoming a healthier, stronger version of yourself. Each workout challenges you, decreases tension, and boosts confidence. Celebrate every small triumph, knowing that each drop of sweat is a step closer to being a better you. You're doing more than just growing muscle; you're also changing your life.</p>
                         <div class="banner-arrow">
                             <img src="/src/assets/images/element/element-10.png" alt="element">
                         </div>
@@ -38,7 +35,7 @@
                                 </div>
                                 <div class="banner-widget-middle">
                                     <div class="banner-widget-content">
-                                        <p class="text-white">Join over <span>4,000+</span> students</p>
+                                        <p class="text-white">Join over <span>1000+</span> Member</p>
                                     </div>
                                 </div>
                                 <div class="banner-widget-right">
