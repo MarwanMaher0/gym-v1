@@ -64,6 +64,10 @@
                                             <input type="password" class="form--control" placeholder="****************">
                                         </div>
                                     </div>
+                                    <div class="col-xl-12 form-group">
+                                        <label>Profile Picture</label>
+                                        <input type="file" class="form--control" @change="handleFileUpload">
+                                    </div>
                                     <div class="col-xl-12 form-group text-center">
                                         <button type="submit" class="btn--base">Sign-up <i
                                                 class="fas fa-arrow-right ml-2"></i></button>
@@ -83,12 +87,13 @@
 
 </template>
 <script setup>
-
+import { ref } from 'vue';
 import axios from 'axios';
 import { useRouter } from 'vue-router';
+
 const router = useRouter();
 
-let form = {
+let form = ref({
     name: '',
     age: '',
     height: '',
@@ -96,24 +101,31 @@ let form = {
     email: '',
     phone: '',
     password: '',
+});
 
+let profilePicture = ref(null);
+
+const handleFileUpload = (event) => {
+    profilePicture.value = event.target.files[0];
 };
 
-
 const register = () => {
-    axios.post('api/user/create/', {
-        email: form.email,
-        name: form.name,
-        age: form.age,
-        weight: form.weight,
-        height: form.height,
-        phone: form.phone,
+    const formData = new FormData();
+    formData.append('email', form.value.email);
+    formData.append('name', form.value.name);
+    formData.append('age', form.value.age);
+    formData.append('weight', form.value.weight);
+    formData.append('height', form.value.height);
+    formData.append('phone', form.value.phone);
+    formData.append('password', form.value.password);
 
+    if (profilePicture.value) {
+        formData.append('picture', profilePicture.value);
+    }
 
-        password: form.password,
-    }, {
+    axios.post('api/user/create/', formData, {
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'multipart/form-data',
         },
         withCredentials: true,
     })
@@ -125,9 +137,8 @@ const register = () => {
             console.error('Error registering user:', error);
         });
 };
-
-
 </script>
+
 <style>
 .grid {
     display: grid;

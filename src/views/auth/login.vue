@@ -80,6 +80,7 @@ const login = () => {
     })
         .then(response => {
             console.log('Successful login:', response.data);
+            localStorage.setItem('token', response.data.token);
             // Redirect to dashboard or another page upon successful login
             router.push('/');
         })
