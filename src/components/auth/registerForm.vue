@@ -32,19 +32,7 @@
                                         <input type="number" class="form--control" placeholder="Enter your age"
                                             v-model="form.age">
                                     </div>
-                                    <div class="grid grid-cols-2">
 
-                                        <div class="col-xl-12 form-group">
-                                            <label>Weight</label>
-                                            <input type="number" class="form--control" placeholder="weight in kg"
-                                                v-model="form.weight">
-                                        </div>
-                                        <div class="col-xl-12 form-group">
-                                            <label>Height</label>
-                                            <input type="number" class="form--control" placeholder="height in cm"
-                                                v-model="form.height">
-                                        </div>
-                                    </div>
                                     <div class="col-xl-12 form-group">
                                         <label>Phone</label>
                                         <input type="tel" class="form--control" placeholder="Enter your phone number"
@@ -96,8 +84,7 @@ const router = useRouter();
 let form = ref({
     name: '',
     age: '',
-    height: '',
-    weight: '',
+
     email: '',
     phone: '',
     password: '',
@@ -114,8 +101,7 @@ const register = () => {
     formData.append('email', form.value.email);
     formData.append('name', form.value.name);
     formData.append('age', form.value.age);
-    formData.append('weight', form.value.weight);
-    formData.append('height', form.value.height);
+
     formData.append('phone', form.value.phone);
     formData.append('password', form.value.password);
 
