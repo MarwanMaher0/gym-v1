@@ -4,6 +4,7 @@
         <Banner />
         <Feature />
         <!-- <Training /> -->
+        <plan />
         <About id="ABOUT" />
         <schedule id="TRAINING" />
         <Footer id="foter" />
@@ -23,7 +24,9 @@ import ScrollToTop from '@/components/home/scrollToTop.vue'
 import Header from '@/components/home/header.vue'
 import Footer from '@/components/home/footer.vue'
 import Banner from '@/components/home/banner.vue'
+import plan from '@/components/home/plan.vue'
 import About from '@/components/home/about-section.vue'
+
 import schedule from '@/components/home/schedule.vue'
 
 </script>

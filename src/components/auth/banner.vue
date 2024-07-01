@@ -8,7 +8,7 @@
             <div class="row justify-content-center align-items-end mb-30-none">
                 <div class="col-xl-12 col-lg-12 text-center mb-30">
                     <div class="banner-content" data-aos="fade-up" data-aos-duration="1800">
-                        <h1 class="title">{{ title }}</h1>
+                        <h1 class="title text-white">{{ title }}</h1>
                     </div>
                 </div>
             </div>

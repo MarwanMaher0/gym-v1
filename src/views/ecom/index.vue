@@ -9,61 +9,70 @@
                     <button class="nav-link" :class="{ active: selectedTab === 'meals' }" id="v-pills-meals-tab"
                         data-bs-toggle="pill" data-bs-target="#v-pills-meals" type="button" role="tab"
                         aria-controls="v-pills-meals" :aria-selected="selectedTab === 'meals'"
-                        @click="selectedTab = 'meals'">
+                        @click="fetchData('meals')">
                         Meals
                     </button>
                     <button class="nav-link" :class="{ active: selectedTab === 'supplements' }"
                         id="v-pills-supplements-tab" data-bs-toggle="pill" data-bs-target="#v-pills-supplements"
                         type="button" role="tab" aria-controls="v-pills-supplements"
-                        :aria-selected="selectedTab === 'supplements'" @click="selectedTab = 'supplements'">
+                        :aria-selected="selectedTab === 'supplements'" @click="fetchData('supplements')">
                         Supplements
                     </button>
                 </div>
                 <div class="like-meal">
-                    <a href="#"> Like Meals</a>
+                    <router-link to="/ecom/wishlist">Like Meals <i class="fas fa-heart"></i></router-link>
+
                 </div>
             </div>
         </div>
         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <div class="row">
-                <div v-for="(dish, index) in dishes" :key="index" class="col-xl-4 col-lg-6" data-aos="flip-up"
+                <div v-for="(item, index) in items" :key="index" class="col-xl-4 col-lg-6" data-aos="flip-up"
                     data-aos-delay="200" data-aos-duration="300">
                     <div class="dish">
-                        <img :alt="dish.name" :src="dish.image">
+                        <img class="max-h-" :alt="item.title || item.name" :src="item.picture">
                         <div class="dish-foods">
-                            <h3>{{ dish.name }}</h3>
-                            <div class="dish-icon">
+                            <h3>{{ item.title || item.name }}</h3>
+                            <div class="dish-icon" v-if="item.tags">
                                 <div class="cafa-button">
-                                    <a v-for="(tag, index) in dish.tags" :key="index" href="#">{{ tag }}</a>
+                                    <a v-for="(tag, index) in item.tags" :key="index" href="#">{{ tag.name }}</a>
                                 </div>
                                 <div class="dish-icon end">
+
                                     <i class="info fa-solid fa-circle-info"></i>
                                     <div class="star">
-                                        <a href="#"></a>
+                                        <a href="#"><i class="fas fa-heart"></i></a>
                                     </div>
                                 </div>
                             </div>
+                            <p class="line-clamp-2 ">{{ item.description }}</p>
                             <div class="price">
-                                <h2>{{ dish.price }}</h2>
-                                <div class="qty-input">
+                                <h2>{{ item.price }}</h2>
+                                <div class="qty-input" v-if="selectedTab === 'meals'">
                                     <button class="qty-count qty-count--minus" data-action="minus"
                                         type="button">-</button>
                                     <input class="product-qty" type="number" name="product-qty" min="0" value="1">
                                     <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
                                 </div>
                             </div>
-                            <button class="button-price">Add to Basket<i class="fa-solid fa-bag-shopping"></i></button>
+                            <button class="button-price">Add to Basket<i class="fas fa-shopping-cart"></i></button>
                         </div>
-                        <div class="dish-info" style="display: none;">
+                        <div class="dish-info" style="display: none;" v-if="selectedTab === 'meals'">
                             <i class="info2 fa-solid fa-xmark"></i>
-                            <h5>{{ dish.infoTitle }}</h5>
+                            <h5>{{ item.infoTitle }}</h5>
                             <div class="cafa-button">
-                                <a v-for="(tag, index) in dish.tags" :key="index" href="#">{{ tag }}</a>
+                                <a v-for="(tag, index) in item.tags" :key="index" href="#">{{ tag.name }}</a>
                             </div>
-                            <p>{{ dish.description }}</p>
+                            <p>{{ item.description }} </p>
                             <ul class="menu-dish">
-                                <li v-for="(item, index) in dish.menu" :key="index">{{ item }}</li>
+                                <li v-for="(ingredient, index) in item.ingredients" :key="index">{{ ingredient.name }}
+                                </li>
                             </ul>
+                        </div>
+
+                        <div class="dish-info" style="display: none;" v-if="selectedTab === 'supplements'">
+                            <i class="info2 fa-solid fa-xmark"></i>
+                            <p>{{ item.description }}</p>
                         </div>
                     </div>
                 </div>
@@ -77,54 +86,49 @@
 import Header from '@/components/auth/header.vue';
 import Footer from '@/components/home/footer.vue';
 
-import { ref } from 'vue';
+
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
 
 const selectedTab = ref('meals');
+const items = ref([]);
 
-const dishes = ref([
-    {
-        name: 'Egg, kiwi and sauce chilli',
-        image: 'https://via.placeholder.com/369x236',
-        tags: ['Breakfast', 'Brunch'],
-        price: '$39',
-        infoTitle: 'Potatoes with pork and dried fruits',
-        description: 'In egestas erat imperdiet sed euismod nisi porta. Ultrices sagittis orci a scelerisque. Diam quam nulla porttitor.',
-        menu: ['Nulla porttitor massa id;', 'Aliquam vestibulum morbi;', 'Blandit donec adipiscing;']
-    },
-    {
-        name: 'Egg, kiwi and sauce chilli',
-        image: 'https://via.placeholder.com/369x236',
-        tags: ['Lunch', 'Dinner'],
-        price: '$45',
-        infoTitle: 'Another info title',
-        description: 'Another description.',
-        menu: ['Another item 1;', 'Another item 2;', 'Another item 3;']
-    },
-    {
-        name: 'Egg, kiwi and sauce chilli',
-        image: 'https://via.placeholder.com/369x236',
-        tags: ['Breakfast', 'Brunch'],
-        price: '$39',
-        infoTitle: 'Potatoes with pork and dried fruits',
-        description: 'In egestas erat imperdiet sed euismod nisi porta. Ultrices sagittis orci a scelerisque. Diam quam nulla porttitor.',
-        menu: ['Nulla porttitor massa id;', 'Aliquam vestibulum morbi;', 'Blandit donec adipiscing;']
-    },
-    {
-        name: 'Egg, kiwi and sauce chilli',
-        image: 'https://via.placeholder.com/369x236',
-        tags: ['Lunch', 'Dinner'],
-        price: '$45',
-        infoTitle: 'Another info title',
-        description: 'Another description.',
-        menu: ['Another item 1;', 'Another item 2;', 'Another item 3;']
-    },
+const fetchData = async (tab) => {
+    selectedTab.value = tab;
+    let endpoint = '';
+    if (tab === 'meals') {
+        endpoint = '/api/recipe/recipes/';
+    } else if (tab === 'supplements') {
+        endpoint = '/api/recipe/supplements/';
+    }
+    try {
+        const response = await axios.get(endpoint);
+        items.value = response.data;
+    } catch (error) {
+        console.error(`Error fetching ${tab}:`, error);
+    }
+};
 
-    // Add more dishes as needed
-]);
+onMounted(() => {
+    fetchData('meals'); // Default to meals on initial load
+});
 </script>
 
 
+
+
 <style scoped>
+.line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.max-h- {
+    max-height: 200px;
+}
+
 .p-20 {
     padding: 180px;
 

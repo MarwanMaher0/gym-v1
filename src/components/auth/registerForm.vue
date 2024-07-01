@@ -26,12 +26,23 @@
                                         <input type="email" class="form--control" placeholder="example@email.com"
                                             v-model="form.email">
                                     </div>
+                                    <div class="grid grid-cols-2">
 
-                                    <div class="col-xl-12 form-group">
-                                        <label>Age</label>
-                                        <input type="number" class="form--control" placeholder="Enter your age"
-                                            v-model="form.age">
+                                        <div class="col-xl-12 form-group">
+                                            <label>Age</label>
+                                            <input type="number" class="form--control" placeholder="Enter your age"
+                                                v-model="form.age">
+                                        </div>
+                                        <div class="col-xl-12 form-group">
+                                            <label for="gender">Gender</label>
+                                            <select id="gender" v-model="form.gender" class="form-control">
+                                                <option value="" disabled selected>Select your gender</option>
+                                                <option value="M">Male</option>
+                                                <option value="F">Female</option>
+                                            </select>
+                                        </div>
                                     </div>
+
 
                                     <div class="col-xl-12 form-group">
                                         <label>Phone</label>
@@ -74,6 +85,7 @@
     </div>
 
 </template>
+
 <script setup>
 import { ref } from 'vue';
 import axios from 'axios';
@@ -84,7 +96,7 @@ const router = useRouter();
 let form = ref({
     name: '',
     age: '',
-
+    gender: '', // Ensure this is an empty string or appropriate initial value
     email: '',
     phone: '',
     password: '',
@@ -101,7 +113,7 @@ const register = () => {
     formData.append('email', form.value.email);
     formData.append('name', form.value.name);
     formData.append('age', form.value.age);
-
+    formData.append('gender', form.value.gender); // Include gender in the form data
     formData.append('phone', form.value.phone);
     formData.append('password', form.value.password);
 

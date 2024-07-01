@@ -1,33 +1,61 @@
 <template>
-    <div class="profile-section ptb-120">
+    <div class="profile-section">
         <div class="container">
-            <div class="row justify-content-center mb-10-none">
-                <div class="col-xl-5 col-lg-6 col-md-8">
-                    <div class="profile-area">
-                        <h3 class="title">Your Profile</h3>
-                        <div v-if="user">
-                            <div class="profile-picture">
-                                <img :src="user.picture" alt="Profile Picture">
-                            </div>
-                            <div class="profile-details">
-                                <p><strong>Name:</strong> {{ user.name }}</p>
-                                <p><strong>Email:</strong> {{ user.email }}</p>
-                                <p><strong>Age:</strong> {{ user.age }}</p>
-                                <p><strong>Weight:</strong> {{ user.weight }} kg</p>
-                                <p><strong>Height:</strong> {{ user.height }} cm</p>
-                                <p><strong>Phone:</strong> {{ user.phone }}</p>
-                                <p><strong>BMI Interpretation:</strong> {{ user.bmi_interpretation }}</p>
-                                <p><strong>Body Fat Percentage:</strong> {{ user.body_fat_percentage }}%</p>
-                                <p><strong>Muscle Mass:</strong> {{ user.muscle_mass }} kg</p>
-                                <p><strong>Bone Density:</strong> {{ user.bone_density }} g/cm³</p>
-                                <p><strong>Waist Circumference:</strong> {{ user.waist_circumference }} cm</p>
-                                <p><strong>Hip Circumference:</strong> {{ user.hip_circumference }} cm</p>
-                            </div>
-                        </div>
-                        <div v-else>
-                            <p>Loading...</p>
-                        </div>
+            <div class="profile-card">
+                <h3 class="title">General Information</h3>
+                <div v-if="user" class="profile-grid">
+
+                    <div class="profile-picture">
+                        <img :src="user.picture" alt="Profile Picture">
+                        <div class=""></div>
                     </div>
+
+                    <div class="profile-details">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" v-model="user.name" placeholder="Full Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" v-model="user.location" placeholder="Location">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" v-model="user.email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group form-check-group">
+                            <input type="checkbox" id="defaultAddress" v-model="user.defaultAddress">
+                            <label for="defaultAddress">Make this my default address</label>
+                        </div>
+
+                        <button class="btn--base" @click="saveProfile">Save</button>
+                    </div>
+
+                    <div class="profile-details">
+                        <div class="form-group">
+                            <label for="profession">Profession</label>
+                            <input type="text" id="profession" v-model="user.profession" placeholder="Profession">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" v-model="user.address" placeholder="Address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" v-model="user.phone" placeholder="Phone">
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div v-else>
+                    <p>Loading...</p>
                 </div>
             </div>
         </div>
@@ -42,7 +70,7 @@ const user = ref(null);
 
 const fetchUserProfile = async () => {
     try {
-        const response = await axios.get('api/user/me/', {
+        const response = await axios.get('/api/user/me/', {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -54,43 +82,132 @@ const fetchUserProfile = async () => {
     }
 };
 
+const saveProfile = async () => {
+    try {
+        await axios.post('/api/user/me/', user.value, {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            withCredentials: true,
+        });
+        alert('Profile saved successfully');
+    } catch (error) {
+        console.error('Error saving profile:', error);
+    }
+};
+
 onMounted(() => {
     fetchUserProfile();
 });
 </script>
 
-<style>
+<style scoped>
+/* General styling */
 .profile-section {
-    padding: 60px 0;
+    padding: 20px;
+    background-color: #f9fafb;
 }
 
-.profile-area {
-    background: #fff;
-    padding: 30px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Card styling */
+.profile-card {
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
-.profile-picture {
-    text-align: center;
+/* Title styling */
+.title {
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Grid layout */
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 20px;
+}
+
+/* Profile picture styling */
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-picture img {
-    max-width: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    border: 2px solid #007bff;
 }
 
-.profile-details {
-    line-height: 1.6;
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
 }
 
-.profile-details p {
-    margin-bottom: 10px;
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
 }
 
-.profile-details strong {
-    display: inline-block;
-    width: 150px;
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Checkbox styling */
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Save button styling */
+.save-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #ea5455;
+}
+
+.form-check-group {
+    display: flex;
+    align-items: baseline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
 }
 </style>

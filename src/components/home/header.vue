@@ -44,6 +44,8 @@
                                                 <router-link to="/">HOME</router-link>
 
                                             </li>
+                                            <li><router-link to="/profile">PROFILE</router-link></li>
+
                                             <li><a href="#ABOUT">ABOUT US</a></li>
                                             <li class="menu_has_children">
                                                 <a href="#TRAINING">TRAINING</a>
@@ -56,13 +58,15 @@
                                         </ul>
                                     </li>
                                     <li><router-link to="/shop">SHOP</router-link></li>
+                                    <li><router-link to="/coaches">COACHES</router-link></li>
                                 </ul>
                                 <div class="header-right">
                                     <div class="header-links-area">
                                         <ul class="header-links">
                                             <li>
                                                 <h5 class="title">Call Us Free</h5>
-                                                <span class="sub-title"><a href="tel:+65325936523">+20 2341348</a></span>
+                                                <span class="sub-title"><a href="tel:+65325936523">+20
+                                                        2341348</a></span>
                                             </li>
                                             <li>
                                                 <h5 class="title">Address</h5>

@@ -12,6 +12,7 @@ const router = createRouter({
       name: "Gym",
       component: () => import("../views/index.vue"),
     },
+
     // auth
     {
       path: "/login",
@@ -39,11 +40,32 @@ const router = createRouter({
       name: "Wishlist",
       component: () => import("../views/ecom/Wishlist.vue"),
     },
+    // pages
 
     {
       path: "/profile",
       name: "profile",
       component: () => import("../views/pages/profile.vue"),
+    },
+    {
+      path: "/coaches",
+      name: "coaches",
+      component: () => import("../views/pages/coaches.vue"),
+    },
+    {
+      path: "/CoachDetails/:id",
+      name: "CoachDetails",
+      component: () => import("../views/pages/CoachDetails.vue"),
+    },
+    {
+      path: "/BMI",
+      name: "BMI",
+      component: () => import("../views/pages/bmi.vue"),
+    },
+    {
+      path: "/dume",
+      name: "dume",
+      component: () => import("../views/pages/dume.vue"),
     },
   ],
 });
