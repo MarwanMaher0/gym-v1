@@ -43,7 +43,7 @@
                                             <li class="menu_has_children">
                                                 <router-link to="/">HOME</router-link>
                                             </li>
-                                            <li><router-link to="/profile">PROFILE</router-link></li>
+                                            <li v-if="!isLoggedIn"><router-link to="/profile">PROFILE</router-link></li>
                                             <li><a href="#ABOUT">ABOUT US</a></li>
                                             <li class="menu_has_children">
                                                 <a href="#TRAINING">TRAINING</a>
