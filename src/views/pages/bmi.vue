@@ -52,6 +52,17 @@
                                         <input type="number" v-model="form.weight" class="form--control"
                                             placeholder="Weight in kg" required>
                                     </div>
+                                    <div class="col-xl-6 col-lg-6 form-group">
+                                        <label>Select Activity Level</label>
+                                        <select v-model="form.activity_level" class="form--control" required>
+                                            <option value="" disabled>Select Activity Level</option>
+                                            <option value="Lightly active">Lightly active</option>
+                                            <option value="Sedentary">Sedentary</option>
+                                            <option value="Moderately active">Moderately active</option>
+                                            <option value="Very active">Very active</option>
+                                            <option value="Super active">Super active</option>
+                                        </select>
+                                    </div>
                                     <div class="col-xl-12 form-group text-center">
                                         <button type="submit" class="btn--base mt-20">Calculate BMI <i
                                                 class="fas fa-arrow-right ml-2"></i></button>
@@ -83,7 +94,8 @@ const form = reactive({
     age: '',
     gender: '',
     height: '',
-    weight: ''
+    weight: '',
+    activity_level: ''  // Add activity_level here
 });
 
 const bmiResult = ref(null);
@@ -98,6 +110,7 @@ const calculateBMI = () => {
     formData.append('gender', form.gender);
     formData.append('height', form.height);
     formData.append('weight', form.weight);
+    formData.append('activity_level', form.activity_level);  // Append activity_level
 
     // Send a PATCH request with the FormData
     axios.patch('/api/user/me/', formData, {
