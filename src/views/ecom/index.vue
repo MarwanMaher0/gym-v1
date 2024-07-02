@@ -28,54 +28,66 @@
             <div class="row">
                 <div v-for="(item, index) in items" :key="index" class="col-xl-4 col-lg-6" data-aos="flip-up"
                     data-aos-delay="200" data-aos-duration="300">
-                    <div class="dish">
-                        <img class="max-h-" :alt="item.title || item.name" :src="item.picture">
-                        <div class="dish-foods">
-                            <h3>{{ item.title || item.name }}</h3>
-                            <div class="dish-icon" v-if="item.tags">
+                    <router-link :to="{
+                        name: selectedTab === 'meals' ? 'DishesDetails' : 'SupplementsDetails',
+                        params: { id: item.id }
+                    }">
+                        <div class="dish">
+                            <img class="max-h-" :alt="item.title || item.name" :src="item.picture" />
+                            <div class="dish-foods">
+                                <h3>{{ item.title || item.name }}</h3>
+                                <div class="dish-icon" v-if="item.tags">
+                                    <div class="cafa-button">
+                                        <a v-for="(tag, index) in item.tags" :key="index" href="#">{{ tag.name }}</a>
+                                    </div>
+                                    <div class="dish-icon end">
+                                        <i class="info fa-solid fa-circle-info"></i>
+                                        <div class="star">
+                                            <a href="#" @click.prevent="toggleFavorite(index)">
+                                                <i :class="['fas fa-heart', { 'favorite': item.favorite }]"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="line-clamp-2 ">{{ item.description }}</p>
+                                <div class="price">
+                                    <h2>{{ item.price }}</h2>
+                                    <div class="qty-input" v-if="selectedTab === 'meals'">
+                                        <button class="qty-count qty-count--minus" data-action="minus" type="button"
+                                            @click="updateQuantity(index, 'minus')">
+                                            -
+                                        </button>
+                                        <input class="product-qty" type="number" name="product-qty" min="0"
+                                            v-model="item.quantity" />
+                                        <button class="qty-count qty-count--add" data-action="add" type="button"
+                                            @click="updateQuantity(index, 'add')">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                                <button class="button-price">
+                                    Add to Basket
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="dish-info" style="display: none;" v-if="selectedTab === 'meals'">
+                                <i class="info2 fa-solid fa-xmark"></i>
+                                <h5>{{ item.infoTitle }}</h5>
                                 <div class="cafa-button">
                                     <a v-for="(tag, index) in item.tags" :key="index" href="#">{{ tag.name }}</a>
                                 </div>
-                                <div class="dish-icon end">
-                                    <i class="info fa-solid fa-circle-info"></i>
-                                    <div class="star">
-                                        <a href="#" @click.prevent="toggleFavorite(index)">
-                                            <i :class="['fas fa-heart', { 'favorite': item.favorite }]"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                <p>{{ item.description }}</p>
+                                <ul class="menu-dish">
+                                    <li v-for="(ingredient, index) in item.ingredients" :key="index">{{ ingredient.name
+                                        }}</li>
+                                </ul>
                             </div>
-                            <p class="line-clamp-2 ">{{ item.description }}</p>
-                            <div class="price">
-                                <h2>{{ item.price }}</h2>
-                                <div class="qty-input" v-if="selectedTab === 'meals'">
-                                    <button class="qty-count qty-count--minus" data-action="minus" type="button"
-                                        @click="updateQuantity(index, 'minus')">-</button>
-                                    <input class="product-qty" type="number" name="product-qty" min="0"
-                                        v-model="item.quantity">
-                                    <button class="qty-count qty-count--add" data-action="add" type="button"
-                                        @click="updateQuantity(index, 'add')">+</button>
-                                </div>
+                            <div class="dish-info" style="display: none;" v-if="selectedTab === 'supplements'">
+                                <i class="info2 fa-solid fa-xmark"></i>
+                                <p>{{ item.description }}</p>
                             </div>
-                            <button class="button-price">Add to Basket<i class="fas fa-shopping-cart"></i></button>
                         </div>
-                        <div class="dish-info" style="display: none;" v-if="selectedTab === 'meals'">
-                            <i class="info2 fa-solid fa-xmark"></i>
-                            <h5>{{ item.infoTitle }}</h5>
-                            <div class="cafa-button">
-                                <a v-for="(tag, index) in item.tags" :key="index" href="#">{{ tag.name }}</a>
-                            </div>
-                            <p>{{ item.description }} </p>
-                            <ul class="menu-dish">
-                                <li v-for="(ingredient, index) in item.ingredients" :key="index">{{ ingredient.name }}
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="dish-info" style="display: none;" v-if="selectedTab === 'supplements'">
-                            <i class="info2 fa-solid fa-xmark"></i>
-                            <p>{{ item.description }}</p>
-                        </div>
-                    </div>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -103,7 +115,7 @@ const fetchData = async (tab) => {
     }
     try {
         const response = await axios.get(endpoint);
-        items.value = response.data.map(item => ({ ...item, quantity: 1, favorite: false })); // Add quantity and favorite property
+        items.value = response.data.map((item) => ({ ...item, quantity: 1, favorite: false }));
     } catch (error) {
         console.error(`Error fetching ${tab}:`, error);
     }

@@ -29,9 +29,9 @@
                             </div>
                             <div class="profile-body">
                                 <ul class="profile-details-list">
-                                    <li>
+                                    <!-- <li>
                                         <strong>ID:</strong> {{ profile?.id || 'Not available' }}
-                                    </li>
+                                    </li> -->
                                     <li>
                                         <strong>Email:</strong> {{ profile?.email || 'Not available' }}
                                     </li>

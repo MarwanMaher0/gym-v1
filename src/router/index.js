@@ -57,6 +57,17 @@ const router = createRouter({
       name: "CoachDetails",
       component: () => import("../views/pages/CoachDetails.vue"),
     },
+
+    {
+      path: "/DishesDetails/:id",
+      name: "DishesDetails",
+      component: () => import("../views/pages/DishesDetails.vue"),
+    },
+    {
+      path: "/SupplementsDetails/:id",
+      name: "SupplementsDetails",
+      component: () => import("../views/pages/SupplementsDetails.vue"),
+    },
     {
       path: "/BMI",
       name: "BMI",
