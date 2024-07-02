@@ -28,7 +28,7 @@
                                 <div class="header-right">
                                     <div class="header-action-area">
                                         <div class="header-action">
-                                            <router-link to="/apply" class="btn--base">APPLY NOW <i
+                                            <router-link to="/login" class="btn--base">APPLY NOW <i
                                                     class="fas fa-arrow-right ml-2"></i></router-link>
                                         </div>
                                     </div>

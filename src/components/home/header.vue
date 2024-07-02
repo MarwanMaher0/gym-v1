@@ -48,6 +48,8 @@
                                             <li class="menu_has_children">
                                                 <a href="#TRAINING">TRAINING</a>
                                             </li>
+                                            <li><router-link to="/BMI">BMI</router-link></li>
+
                                             <li v-if="!isLoggedIn"><router-link to="/register">SIGN UP</router-link>
                                             </li>
                                             <li v-if="!isLoggedIn"><router-link to="/login">SIGN IN</router-link></li>
