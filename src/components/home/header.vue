@@ -42,18 +42,18 @@
                                         <ul class="sub-menu">
                                             <li class="menu_has_children">
                                                 <router-link to="/">HOME</router-link>
-
                                             </li>
                                             <li><router-link to="/profile">PROFILE</router-link></li>
-
                                             <li><a href="#ABOUT">ABOUT US</a></li>
                                             <li class="menu_has_children">
                                                 <a href="#TRAINING">TRAINING</a>
-
                                             </li>
-                                            <li><router-link to="/register">SIGN UP</router-link></li>
-                                            <li><router-link to="/login">SIGN IN</router-link></li>
-
+                                            <li v-if="!isLoggedIn"><router-link to="/register">SIGN UP</router-link>
+                                            </li>
+                                            <li v-if="!isLoggedIn"><router-link to="/login">SIGN IN</router-link></li>
+                                            <li v-if="isLoggedIn"><a @click="logout()">SIGN
+                                                    OUT</a>
+                                            </li>
                                             <li><a href="#foter">CONTACT US</a></li>
                                         </ul>
                                     </li>
@@ -70,7 +70,7 @@
                                             </li>
                                             <li>
                                                 <h5 class="title">Address</h5>
-                                                <span class="sub-title">55RH+3CP, Mahmood Rashwn,Assiut</span>
+                                                <span class="sub-title">55RH+3CP, Mahmood Rashwn, Assiut</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -91,7 +91,22 @@
 </template>
 
 <script setup>
-// Import any components or define setup as needed
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+
+// Reactive property to track login status
+const isLoggedIn = ref(localStorage.getItem("token") !== null);
+
+// Logout function
+const logout = () => {
+    router.push('/login');
+    localStorage.removeItem("token");
+    isLoggedIn.value = false;
+
+};
 </script>
 
 <style>

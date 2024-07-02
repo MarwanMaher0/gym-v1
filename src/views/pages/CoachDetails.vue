@@ -67,7 +67,7 @@
                     <p>{{ coach?.aboutExtended || 'If you are looking to learn how to drive. Sed ut perspiciatis, unde'
                         }}</p>
                     <div class="about-widget-thumb">
-                        <img src="@/assets/images/bg/bg-20.png" alt="bg">
+                        <img :src="coach?.certificate" alt="certificate">
 
                     </div>
                 </div>
@@ -83,6 +83,8 @@ import Footer from '@/components/home/footer.vue';
 import Header from '@/components/auth/header.vue';
 import banner from '@/components/auth/banner.vue';
 import picture from '@/assets/images/trainer/trainer-1.png';
+import certificate from '@/assets/images/bg/bg-20.png';
+
 
 import axios from 'axios';
 import { ref, onMounted } from 'vue';
@@ -96,6 +98,7 @@ onMounted(() => {
     axios.get(`/api/recipe/coaches/${id}/`)
         .then(response => {
             coach.value = response.data;
+
         })
         .catch(error => {
             console.error('Error fetching coach details:', error);

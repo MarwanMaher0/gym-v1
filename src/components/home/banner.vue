@@ -22,7 +22,10 @@
                         <span class="sub-title">WELCOME TO GYM MASTER</span>
                         <h1 class="title">EVERY GREAT</h1>
                         <h3 class="inner-title">JOURNEY STARTS WITH ONE STEP!</h3>
-                        <p>Going to the gym represents a dedication to becoming a healthier, stronger version of yourself. Each workout challenges you, decreases tension, and boosts confidence. Celebrate every small triumph, knowing that each drop of sweat is a step closer to being a better you. You're doing more than just growing muscle; you're also changing your life.</p>
+                        <p>Going to the gym represents a dedication to becoming a healthier, stronger version of
+                            yourself. Each workout challenges you, decreases tension, and boosts confidence. Celebrate
+                            every small triumph, knowing that each drop of sweat is a step closer to being a better you.
+                            You're doing more than just growing muscle; you're also changing your life.</p>
                         <div class="banner-arrow">
                             <img src="/src/assets/images/element/element-10.png" alt="element">
                         </div>
@@ -40,8 +43,9 @@
                                 </div>
                                 <div class="banner-widget-right">
                                     <div class="banner-widget-btn">
-                                        <a href="" class="btn--base">Apply Now <i
-                                                class="fas fa-arrow-right ml-2"></i></a>
+                                        <router-link to="/login" class="btn--base">Apply Now <i
+                                                class="fas fa-arrow-right ml-2"></i></router-link>
+
                                     </div>
                                 </div>
                             </div>
@@ -52,3 +56,6 @@
         </div>
     </section>
 </template>
+<script setup>
+
+</script>

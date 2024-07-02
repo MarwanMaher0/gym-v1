@@ -44,7 +44,7 @@
                             <div class="plan-footer">
                                 <a href="">
                                     <h3 class="title">GO {{ plan.type.toUpperCase() }}</h3>
-                                    <div class="plan-btn"><i class="fas fa-angle-right"></i></div>
+
                                 </a>
                             </div>
                             <div class="plan-overlay">
@@ -77,7 +77,7 @@
                             <div class="plan-footer">
                                 <a href="">
                                     <h3 class="title">GO {{ plan.type.toUpperCase() }}</h3>
-                                    <div class="plan-btn"><i class="fas fa-angle-right"></i></div>
+
                                 </a>
                             </div>
                             <div class="plan-overlay">
