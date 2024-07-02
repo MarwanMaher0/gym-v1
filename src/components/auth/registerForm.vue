@@ -52,7 +52,6 @@
 
 
                                     <div class="grid grid-cols-2">
-
                                         <div class="col-xl-12 form-group">
                                             <label>Enter Password</label>
                                             <input type="password" class="form--control" placeholder="****************"
@@ -60,7 +59,8 @@
                                         </div>
                                         <div class="col-xl-12 form-group">
                                             <label>Re-Enter Password</label>
-                                            <input type="password" class="form--control" placeholder="****************">
+                                            <input type="password" class="form--control" placeholder="****************"
+                                                v-model="form.repassword">
                                         </div>
                                     </div>
                                     <div class="col-xl-12 form-group">
@@ -72,6 +72,7 @@
                                                 class="fas fa-arrow-right ml-2"></i></button>
                                     </div>
                                 </div>
+                                <div v-if="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
                             </form>
                         </div>
                         <div class="account-change-area">
@@ -83,7 +84,6 @@
             </div>
         </section>
     </div>
-
 </template>
 
 <script setup>
@@ -96,30 +96,41 @@ const router = useRouter();
 let form = ref({
     name: '',
     age: '',
-    gender: '', // Ensure this is an empty string or appropriate initial value
+    gender: '',
     email: '',
     phone: '',
     password: '',
+    repassword: ''  // Add repassword field
 });
 
 let profilePicture = ref(null);
+let errorMessage = ref('');
 
 const handleFileUpload = (event) => {
     profilePicture.value = event.target.files[0];
 };
 
 const register = () => {
+    // Check if passwords match
+    if (form.value.password !== form.value.repassword) {
+        errorMessage.value = 'Passwords do not match.';
+        return;
+    }
+
+    // Check if profile picture is uploaded
+    if (!profilePicture.value) {
+        errorMessage.value = 'Profile picture is required.';
+        return;
+    }
+
     const formData = new FormData();
     formData.append('email', form.value.email);
     formData.append('name', form.value.name);
     formData.append('age', form.value.age);
-    formData.append('gender', form.value.gender); // Include gender in the form data
+    formData.append('gender', form.value.gender);
     formData.append('phone', form.value.phone);
     formData.append('password', form.value.password);
-
-    if (profilePicture.value) {
-        formData.append('picture', profilePicture.value);
-    }
+    formData.append('picture', profilePicture.value);
 
     axios.post('api/user/create/', formData, {
         headers: {
@@ -133,6 +144,7 @@ const register = () => {
         })
         .catch(error => {
             console.error('Error registering user:', error);
+            errorMessage.value = 'Failed to register. Please try again.';
         });
 };
 </script>
