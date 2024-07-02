@@ -35,7 +35,7 @@
                                     <p>{{ plan.description }}</p>
                                 </div>
                                 <div class="plan-price-area">
-                                    <h2 class="price-title"><sup>$</sup>{{ plan.price }}<sub>/month</sub></h2>
+                                    <h2 class="price-title"><sup>LE</sup>{{ plan.price }}<sub>/month</sub></h2>
                                 </div>
                                 <ul class="plan-list">
                                     <li v-for="(feature, fIndex) in plan.features" :key="fIndex">{{ feature }}</li>
@@ -68,7 +68,7 @@
                                     <p>{{ plan.description }}</p>
                                 </div>
                                 <div class="plan-price-area">
-                                    <h2 class="price-title"><sup>$</sup>{{ plan.price }}<sub>/year</sub></h2>
+                                    <h2 class="price-title"><sup>LE</sup>{{ plan.price }}<sub>/year</sub></h2>
                                 </div>
                                 <ul class="plan-list">
                                     <li v-for="(feature, fIndex) in plan.features" :key="fIndex">{{ feature }}</li>
